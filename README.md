@@ -21,9 +21,13 @@
 clap = { version = "3.0", features = ["derive"] }
 ```
 
-`main.rs` 파일에 다음 구조체 도입하고 정리
+`main.rs` 파일에 앞에서 도입한 `clap`에서 `Parser`을 사용한다고 하고 `#[derive(Parser)]`과 같이 설정해서 `derive`모드로 사용한다고 하고 이를 구조체를 도입하고 이를 `main()`에 적용해보자. 그러면 `main.rs`이 다음과 같이 될 것이다.
 
 ```rust
+use clap::Parser;
+
+/// Search for a pattern in a file and display the lines that contain it.
+#[derive(Parser)]
 struct Cli {
     /// The pattern to look for
     pattern: String,
@@ -31,6 +35,33 @@ struct Cli {
     #[clap(parse(from_os_str))]
     path: std::path::PathBuf,
 }
+
+fn main() {
+    let _args = Cli::parse();
+}
+```
+
+이를 터미널에서 다음과 같이 컴파일하고 실행하면 다음과 같은 결과를 확인할 수 있다. 한 것이 없는데 터미널 앱 형태를 이미 갖춘 것이다.
+
+```console
+➜ cargo run -- some-pattern some-file
+    Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/command_line_app_ex some-pattern some-file`
+➜ cargo run aa --help 
+    Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/command_line_app_ex aa --help`
+command_line_app_ex 
+Search for a pattern in a file and display the lines that contain it
+
+USAGE:
+    command_line_app_ex <PATTERN> <PATH>
+
+ARGS:
+    <PATTERN>    The pattern to look for
+    <PATH>       The path to the file to read
+
+OPTIONS:
+    -h, --help    Print help information
 ```
 
 ### 지금까지 한 코드: 0.2.0
