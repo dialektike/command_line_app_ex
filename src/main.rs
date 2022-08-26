@@ -11,5 +11,6 @@ struct Cli {
 }
 
 fn main() {
-    let _args = Cli::parse();
+    let args = Cli::parse();
+    println!("파일 경로 및 파일 이름:{:?}, 찾을 내용: {}", &args.path, &args.pattern);
 }
