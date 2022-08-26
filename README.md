@@ -160,3 +160,9 @@ For more information try --help
 ```
 
 이렇게 실행해보니 `Hello` `helloo.txt`와 같은 인자 없이 실행하는 경우 발생하는 에러를 처리하지 못하는 것을 확인할 수 있다.
+
+### 지금까지 한 코드: 0.3.0
+
+- [ver 0.3.0 코드 확인](https://github.com/dialektike/command_line_app_ex/tree/0.3.0)
+
+- [ver 0.2.0 코드와 ver 0.3.0 코드 비교](https://github.com/dialektike/command_line_app_ex/commit/07e19422d89802e2590d4a62d09dd5f8eb887ac0)
