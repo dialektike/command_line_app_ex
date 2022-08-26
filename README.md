@@ -68,3 +68,9 @@ OPTIONS:
 ```
 
  별로 한 것이 없는데 터미널 앱 형태를 이미 갖춘 것이다. 첫 번째 입력한 인자인 `hello`은 찾을 내용으로 표시되며, 두 번째 입력한 인자인 `hello.txt`은 '파일 경로 및 파일 이름'이라고 표시되고 있다. 이를 통해 알 수 있는 것이 특정 `txt`에 특정 내용을 찾는 커멘드 앱을 만들고 있는 것인지 추측할 수 있겠다.
+
+### 지금까지 한 코드: 0.2.0
+
+- [ver 0.2.0 코드 확인](https://github.com/dialektike/command_line_app_ex/tree/0.2.0)
+
+- [ver 0.1.0 코드와 ver 0.2.0 코드 비교](https://github.com/dialektike/command_line_app_ex/commit/e877921a2ac2b72aa739798258f357eb2cc9ccb7)
