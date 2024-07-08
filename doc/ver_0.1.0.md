@@ -1,6 +1,6 @@
 # Rust로 만드는 터미널용 커맨트 라인 앱 만들기 연습 ver 0.1.0 설명서
 
-## ver 0.1.0 까지의 과정
+## 지금까지의 과정
 
 1. github에서 `command_line_app_ex`를 만듬
 2. 위에서 만든 프로젝트를 가져옴:`gh repo clone dialektike/command_line_app_ex`
