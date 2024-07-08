@@ -5,5 +5,5 @@
 ## 진행 과정
 
 - 처음 프로젝트 만들기: [ver 0.1.0](https://github.com/dialektike/command_line_app_ex/blob/main/doc/ver_0.1.0.md)
-- clap 크레이트 도입: [ver 0.1.0](https://github.com/dialektike/command_line_app_ex/blob/main/doc/ver_0.2.0.md)
-- txt 파일 내용을 읽어오는 기능 구현: [ver 0.1.0](https://github.com/dialektike/command_line_app_ex/blob/main/doc/ver_0.3.0.md)
+- clap 크레이트 도입: [ver 0.2.0](https://github.com/dialektike/command_line_app_ex/blob/main/doc/ver_0.2.0.md)
+- txt 파일 내용을 읽어오는 기능 구현: [ver 0.3.0](https://github.com/dialektike/command_line_app_ex/blob/main/doc/ver_0.3.0.md)
